@@ -1,2 +1,2 @@
 #!/bin/bash
-chown root:vincent/staff
+chown root:vincent /staff
