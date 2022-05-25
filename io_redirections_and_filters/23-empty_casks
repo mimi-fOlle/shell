@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ago1 | find . -type f d -empty
+ls -a1 | find . -type f -empty -print
