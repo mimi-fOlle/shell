@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | find . -type f -empty -print | uniq -u
+ls -a1 | find . -type 'd,f' -empty -print | cut -f 9 
