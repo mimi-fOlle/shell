@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | find . -type d -empty -print | cut -f 9 
+ls -1 | find . -type 'd,f' -empty -print | cut -f 9 
