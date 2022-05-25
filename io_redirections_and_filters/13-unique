@@ -1,2 +1,2 @@
 #!/bin/bash
-ls [CG] | sort
+ls | sort | uniq -u
