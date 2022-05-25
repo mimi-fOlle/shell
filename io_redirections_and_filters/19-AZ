@@ -1,2 +1,2 @@
 #!/bin/bash
-tr [:alpha:] 'A,c' 'Z,e'
+cat | tr 'Ac' 'Ze'
