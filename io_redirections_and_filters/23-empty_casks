@@ -1,2 +1,2 @@
 #!/bin/bash
-cat | find . -type f d -empty
+ls -ago1 | find . -type f d -empty
