@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | find . -type f -empty -print
+ls -a1 | find . -d: -f7 -empty -print
