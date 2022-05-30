@@ -5,6 +5,6 @@ for i in {0..0}
 do 
 	# printf "find %i-* -maxdepth 1 | cut -d'-' -f2" $i
         #find "%i"-* -maxdepth 1 | cut -d'-' -f2
-	find ./ -maxdepth 1 | cut -d'-' -f2 | rev | cut -d'/' -f1 | rev
+	find ./ -maxdepth 1 | tail -n +2 | cut -d'-' -f2 | rev | cut -d'/' -f1 | rev
 	((i++))
 done
