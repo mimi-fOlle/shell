@@ -6,7 +6,7 @@ do echo Best School
 	((a++))
 	if [[ $a = 4 ]]; then
 		echo bad luck
-	elif [[ $a = 8 ]]; then
+	elif [[ $a = 9 ]]; then
 		echo good luck
 	else
 		break
