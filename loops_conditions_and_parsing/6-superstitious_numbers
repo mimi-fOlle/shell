@@ -6,8 +6,8 @@ do
 	echo "$a"
 	(( a += 1 ))
 		case "$a" in
-		"4" ) echo 'bad luck from China';;
-		"9" ) echo 'bad luck from Japan';;
-		"17" ) echo 'bad luck from Italy';;
+		"5" ) echo 'bad luck from China';;
+		"10" ) echo 'bad luck from Japan';;
+		"18" ) echo 'bad luck from Italy';;
 		esac
 	done
