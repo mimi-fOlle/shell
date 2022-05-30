@@ -4,9 +4,9 @@ a=1
 while [[ $a -le 10 ]]
 do echo Best School
 	((++a))
-	if (( $a -le 5 )); then
+	if [[ $a -le 5 ]]; then
 		echo bad luck
-	elif (( $a -le 9 )); then
+	elif [[ $a -le 9 ]]; then
 		echo good luck
 	else
 		echo Best School
