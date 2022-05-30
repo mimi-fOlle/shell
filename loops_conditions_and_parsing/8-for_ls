@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # Display the content of the current directory-in a list format-where only the part of the name after the first dash is displayed (use for loop/without hidden files)
-((i))
-for i in ./
+i=0
+for i in {0..0} 
 do 
-	find -maxdepth 1 | cut -d'-' -f2 | rev | cut -d'/' -f1 | rev
+	# printf "find %i-* -maxdepth 1 | cut -d'-' -f2" $i
+        #find "%i"-* -maxdepth 1 | cut -d'-' -f2
+	find ./ -maxdepth 1 | cut -d'-' -f2 | rev | cut -d'/' -f1 | rev
+	((i++))
 done
