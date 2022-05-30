@@ -8,6 +8,7 @@ do echo Best School
 		echo bad luck
 	elif [[ $a = 8 ]]; then
 		echo good luck
-	else true
+	else
+		break
 	fi
 done
