@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Display the loops from 1 to 10, with bad luck at 4th loop, good luck at 8th loop, and Best School for the rest (use while/if, elif, else)
+a=1
+while [[ $a -le 10 ]]
+do echo Best School
+	((++a))
+	if (( $a -le 5 )); then
+		echo bad luck
+	elif (( $a -le 9 )); then
+		echo good luck
+	else
+		echo Best School
+	fi
+done
