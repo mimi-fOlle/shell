@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Display the content of the current directory-in a list format-where only the part of the name after the first dash is displayed (use for loop/without hidden files)
 ((i))
-for i in dir/*
+for i in /usr/local/sbin
 do 
-	echo "$(ls)" | cut -d'-' -f2
+	ls | cut -d'-' -f2
 done
