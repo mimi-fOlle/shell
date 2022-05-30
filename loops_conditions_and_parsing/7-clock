@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Display the time for 12 hrs (0-12) and 59 mins (1-59) by using while loop (show first 70 lines only)
+a=1
+while [ $a -le 12 ]
+do echo "Hour: $a"
+	((a+1))
+	if [[ $a -eq 1 ]]; then
+		echo [[ 1..59 ]]
+	fi
+done
