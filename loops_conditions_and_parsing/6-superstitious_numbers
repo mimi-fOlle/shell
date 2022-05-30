@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Displays numbers from 1 to 20, mark 'bad luck from China' under 4th iteration, 'bad luck from Japan' under 9th iteration, and 'bad luck from Italy' under 17th. (while loop with case statement)
+a=1
+while [ $a -eq 20 ]
+do
+	echo $a
+	case [ $a = 4 ] in
+		echo 'bad luck from China'
+		case [ $a = 9 ] in
+			echo 'bad luck from Japan'
+			case [ $a = 17 ] in
+				echo 'bad luck from Italy'
+		esac
+		((a++))
+	done
+
+

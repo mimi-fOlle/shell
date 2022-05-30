@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display numbers from 1 to 20 and at 4th loop iteration marks 'bad luck from China', at 9th marks 'back luck from Japan' and mark 'bad luck from Italy' at 17th. (While loop w/case statement)
+a=1
+while [ $a -le 20 ]
+do
+echo $
