@@ -4,6 +4,7 @@ a=1
 while [ $a -le 10 ]
 do
 echo Best School
+((a++))
 if [[ $a = 9 ]]; then
 	echo Hi
 fi
