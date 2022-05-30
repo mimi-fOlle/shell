@@ -2,13 +2,13 @@
 # Display the loops from 1 to 10, with bad luck at 4th loop, good luck at 8th loop, and Best School for the rest (use while/if, elif, else)
 a=1
 while [ $a -le 10 ]
-do echo Best School
+do
 	if [[ $a = 4 ]]; then
-		echo 'bad luck'
+		echo bad luck
 	elif [[ $a = 8 ]]; then
-		echo 'good luck'
+		echo good luck
 	else
-		break
+		echo Best School
 	fi
 	((a++))
 done
