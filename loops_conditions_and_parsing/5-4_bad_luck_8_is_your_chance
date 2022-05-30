@@ -3,12 +3,12 @@
 a=1
 while [ $a -le 10 ]
 do echo Best School
-	((a++))
 	if [[ $a = 4 ]]; then
-		echo bad luck
+		echo 'bad luck'
 	elif [[ $a = 8 ]]; then
-		echo good luck
+		echo 'good luck'
 	else
 		break
 	fi
+	((a++))
 done
