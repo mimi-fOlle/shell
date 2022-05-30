@@ -3,5 +3,5 @@
 ((i))
 for i in ./
 do 
-	find -maxdepth 1 | cut -d'-' -f2
+	find -maxdepth 1 | cut -d'-' -f2 | rev | cut -d'/' -f1 | rev
 done
