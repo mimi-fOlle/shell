@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Using "until" to write a script that displays Best School 10 times
-a=1
+a=0
 until [[ $a -eq 10 ]]
 do echo Best School
 	((a++))
