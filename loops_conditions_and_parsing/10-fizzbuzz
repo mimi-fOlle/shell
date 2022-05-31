@@ -9,5 +9,4 @@ do
 		"$a*5" ) echo 'Buzz';;
 		"$a*15" ) echo 'FizzBuzz';;
 	esac
-	((a++))
 done
