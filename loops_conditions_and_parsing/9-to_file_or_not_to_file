@@ -2,18 +2,18 @@
 # A script that gives the information about "school" file by using if and else.
 a=school
 if [ -e $a ];
-then 
+   then 
 	echo "school file exists"
-if [ -s $a ];
-then
-	echo "school file is not empty"
-else
-	echo "school file is empty"
-fi
-if [ -f $a ];
-then
-	echo "school is a regular file"
-fi
-else
-	echo "school file does not exist"
-fi
+         if [ -s $a ];
+         then
+	     echo "school file is not empty"
+         else
+	     echo "school file is empty"
+ fi
+         if [ -f $a ];
+         then
+	     echo "school is a regular file"
+ fi
+  else
+	 echo "school file does not exist"
+ fi
