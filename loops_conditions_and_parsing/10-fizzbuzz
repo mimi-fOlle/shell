@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # Numbers from 1 to 100/displays "FizzBuzz"
 a=1
-while [ $a -eq 100 ]
+while [ $a -le 100 ]
 do
-	echo $a
+	echo "$a"
+	((a+=1))
 	case $a in
 		"$a*3" ) echo 'Fizz';;
 		"$a*5" ) echo 'Buzz';;
