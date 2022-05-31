@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # A script that gives the information about "school" file by using if and else.
 a=school
-if [[ -a $a ]];
+if [[ -e $a ]];
 then 
 	echo "school file exists"
 else
