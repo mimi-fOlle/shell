@@ -16,5 +16,5 @@ else
 fi
 if [[ -f $a ]];
 then
-	echo "school is regular file"
+	echo "school is a regular file"
 fi
