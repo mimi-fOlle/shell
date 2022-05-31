@@ -7,7 +7,7 @@ then
 else
 	echo "school file does not exist"
 fi
-if [[ -s $a ]];
+if [[ $a -gt 1 ]];
 then
 	echo "school file is not empty"
 else

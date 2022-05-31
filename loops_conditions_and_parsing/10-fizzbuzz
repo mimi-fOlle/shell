@@ -4,10 +4,20 @@ a=1
 while [ $a -le 100 ]
 do
 	echo "$a"
-	((a+=1))
-	case $a in
-		"$a*3" ) echo 'Fizz';;
-		"$a*5" ) echo 'Buzz';;
-		"$a*15" ) echo 'FizzBuzz';;
-	esac
+	if [[ $((a%3)) = 0 ]];
+	then 
+		printf "Fizz\n"
+	elif [[ $((a%5)) = 0 ]];
+	then
+	        echo Buzz
+	fi
+	case "$a" in 
+		        "15") echo FizzBuzz;;
+			"30") echo FizzBuzz;;
+	         	"45") echo FizzBuzz;;
+			"60") echo FizzBuzz;;
+			"75") echo FizzBuzz;;
+			"90") echo FizzBuzz;;
+		esac
+	((a++))
 done
