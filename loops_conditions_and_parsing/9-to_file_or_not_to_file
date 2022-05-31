@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # A script that gives the information about "school" file by using if and else.
 a=school
-if [[ -e $a ]];
+if [ -e $a ];
 then 
 	echo "school file exists"
-if [[ -s $a ]];
+if [ -s $a ];
 then
 	echo "school file is not empty"
 else
 	echo "school file is empty"
 fi
-if [[ -f $a ]];
+if [ -f $a ];
 then
 	echo "school is a regular file"
 else
