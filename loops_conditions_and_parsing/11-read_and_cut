@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Display the content of the file /etc/passwd, list only username, user id, home dir path for the user by using while loop
+a= "/etc/passwd"
+while CR=/ read -r username userid homedir
+do
+	echo "$username, $userid, $homedir"
+done < $a
