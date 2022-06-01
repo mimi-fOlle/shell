@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Display- To infinity and beyond indefinitely - with sleep 2 in between each iteration - "I am invincible!!!" when receiving a SIGTERM signal. Make a copy of script 6, name it 67-stop_me_if_you_can, that kills the process of this project(7) instead of the project 4.
+
