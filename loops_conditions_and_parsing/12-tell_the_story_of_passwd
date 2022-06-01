@@ -4,5 +4,5 @@
 File="/etc/passwd"
 while IFS=: read -r username passwd userid group_id useridinfo homedir commandshell
 do
-	printf "The user %s is part of the %6f gang, lives in %i and rides %i. %i's place is protected by the passcode %s, more info about the user here: %s" "$username" "$group_id" "$homedir" "$commandshell" "$userid" "$passwd" "$useridinfo"
+	printf "The user %s is part of the %.6f gang, lives in %i and rides %i. %i's place is protected by the passcode %s, more info about the user here: %s" "$username" "$group_id" "$homedir" "$commandshell" "$userid" "$passwd" "$useridinfo"
 done < "$File"
