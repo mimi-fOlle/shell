@@ -13,4 +13,4 @@ do
 	echo "To infinity and beyond"
 done
 
-killall
+kill-9 | rm /var/run/myscript.pid
