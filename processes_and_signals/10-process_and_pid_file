@@ -13,4 +13,4 @@ do
 	echo "To infinity and beyond"
 done
 
-kill -9
+killall
