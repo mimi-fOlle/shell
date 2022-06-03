@@ -1,22 +1,25 @@
 #!/usr/bin/env bash
 # Programe that manages "manage_my_process", require start, stop, restart.
+pid=/var/run/my_process.pid
 if [ "$1" = "start" ]
 then
 	echo "manage_my_process started" 
-./manage_my_process &
-echo $$ > /var/run/my_process.pid
+	sudo ./manage_my_process &
+       	echo "$!" > "$pid"
 
 elif [ "$1" = "stop" ]
 then
+	sudo kill "$(cat $pid)" &&
+       	rm -f "$pid"
 	echo "manage_my_process stopped"
-	pkill -9 -f manage_my_process
-       # rm /var/run/my_process.pid
 
 elif [ "$1" = "restart" ]
 then
+	sudo kill "$(cat $pid)" &&
+       	rm -f "$pid"
+	sudo ./manage_my_process & echo "$!" > "$pid"
 	echo "manage_my_process restarted"
 
-# rm /var/run/my_process.pid
-
-else echo "Usage: manage_my_process {start|stop|restart}"
+else 
+	echo "Usage: manage_my_process {start|stop|restart}"
 fi
